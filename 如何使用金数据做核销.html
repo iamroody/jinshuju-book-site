@@ -1,0 +1,789 @@
+
+<!DOCTYPE HTML>
+<html lang="zh-cn" >
+    <head>
+        <meta charset="UTF-8">
+        <meta content="text/html; charset=utf-8" http-equiv="Content-Type">
+        <title>如何使用金数据做核销 · 2小时精通金数据</title>
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="description" content="">
+        <meta name="generator" content="GitBook 3.2.2">
+        <meta name="author" content="金数据">
+        
+        
+    
+    <link rel="stylesheet" href="gitbook/style.css">
+
+    
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-highlight/website.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-search/search.css">
+                
+            
+                
+                <link rel="stylesheet" href="gitbook/gitbook-plugin-fontsettings/website.css">
+                
+            
+        
+
+    
+
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+        
+    
+
+        
+    
+    
+    <meta name="HandheldFriendly" content="true"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+    <link rel="apple-touch-icon-precomposed" sizes="152x152" href="gitbook/images/apple-touch-icon-precomposed-152.png">
+    <link rel="shortcut icon" href="gitbook/images/favicon.ico" type="image/x-icon">
+
+    
+    <link rel="next" href="如何将表单数据打印到word文档.html" />
+    
+    
+    <link rel="prev" href="如何进行在线考试.html" />
+    
+
+    </head>
+    <body>
+        
+<div class="book">
+    <div class="book-summary">
+        
+            
+<div id="book-search-input" role="search">
+    <input type="text" placeholder="輸入並搜尋" />
+</div>
+
+            
+                <nav role="navigation">
+                
+
+
+<ul class="summary">
+    
+    
+
+    
+
+    
+        
+        <li class="header">寄语</li>
+        
+        
+    
+        <li class="chapter " data-level="1.1" data-path="./">
+            
+                <a href="./">
+            
+                    
+                    寄语
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="1.2" data-path="如何阅读这本书.html">
+            
+                <a href="如何阅读这本书.html">
+            
+                    
+                    如何阅读这本书
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">使用技巧</li>
+        
+        
+    
+        <li class="chapter " data-level="2.1" data-path="如何获得高质量的数据.html">
+            
+                <a href="如何获得高质量的数据.html">
+            
+                    
+                    如何获得高质量的数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.2" data-path="如何进行-crm-客户管理.html">
+            
+                <a href="如何进行-crm-客户管理.html">
+            
+                    
+                    如何管理填表人
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.3" data-path="如何在金数据发送邮件.html">
+            
+                <a href="如何在金数据发送邮件.html">
+            
+                    
+                    如何在填表后自动给用户发送短信和邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.4" data-path="如何在金数据发短信.html">
+            
+                <a href="如何在金数据发短信.html">
+            
+                    
+                    如何群发短信和邮件
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.5" data-path="如何给表单添加客服功能.html">
+            
+                <a href="如何给表单添加客服功能.html">
+            
+                    
+                    如何给表单添加客服功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.6" data-path="如何用微信公众号发布表单.html">
+            
+                <a href="如何用微信公众号发布表单.html">
+            
+                    
+                    如何在微信公众号中嵌入表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.7" data-path="如何实现订单在线支付.html">
+            
+                <a href="如何实现订单在线支付.html">
+            
+                    
+                    如何实现微信收款
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.8" data-path="如何收集用户微信信息.html">
+            
+                <a href="如何收集用户微信信息.html">
+            
+                    
+                    如何收集用户微信信息
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.9" data-path="如何在微信中查看数据.html">
+            
+                <a href="如何在微信中查看数据.html">
+            
+                    
+                    如何在微信中查看数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.10" data-path="如何收集文件资料.html">
+            
+                <a href="如何收集文件资料.html">
+            
+                    
+                    如何用表单收集文件资料
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.11" data-path="如何建立一个查询系统.html">
+            
+                <a href="如何建立一个查询系统.html">
+            
+                    
+                    如何建立一个查询系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.12" data-path="如何追踪数据来源.html">
+            
+                <a href="如何追踪数据来源.html">
+            
+                    
+                    如何追踪数据的来源
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.13" data-path="企业用户如何更好地使用金数据.html">
+            
+                <a href="企业用户如何更好地使用金数据.html">
+            
+                    
+                    企业用户如何更好地使用金数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.14" data-path="如何提升表单颜值.html">
+            
+                <a href="如何提升表单颜值.html">
+            
+                    
+                    如何将表单做得更漂亮
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.15" data-path="如何在表单中插入音乐和视频.html">
+            
+                <a href="如何在表单中插入音乐和视频.html">
+            
+                    
+                    如何为表单添加音频和视频
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="2.16" data-path="更多实用功能，也许只有-1-的人会用.html">
+            
+                <a href="更多实用功能，也许只有-1-的人会用.html">
+            
+                    
+                    金数据中的其他高级功能
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">应用中心</li>
+        
+        
+    
+        <li class="chapter " data-level="3.1" data-path="如何实现商品订单满减.html">
+            
+                <a href="如何实现商品订单满减.html">
+            
+                    
+                    如何实现商品订单满减
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.2" data-path="如何使用金数据发红包.html">
+            
+                <a href="如何使用金数据发红包.html">
+            
+                    
+                    如何使用金数据发红包
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.3" data-path="如何使用金数据做抽奖.html">
+            
+                <a href="如何使用金数据做抽奖.html">
+            
+                    
+                    如何使用金数据做抽奖
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.4" data-path="如何进行在线考试.html">
+            
+                <a href="如何进行在线考试.html">
+            
+                    
+                    如何进行在线考试
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter active" data-level="3.5" data-path="如何使用金数据做核销.html">
+            
+                <a href="如何使用金数据做核销.html">
+            
+                    
+                    如何使用金数据做核销
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="3.6" data-path="如何将表单数据打印到word文档.html">
+            
+                <a href="如何将表单数据打印到word文档.html">
+            
+                    
+                    如何将表单数据打印到 Word 文档
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">企业版</li>
+        
+        
+    
+        <li class="chapter " data-level="4.1" data-path="金数据企业版介绍.html">
+            
+                <a href="金数据企业版介绍.html">
+            
+                    
+                    金数据企业版介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.2" data-path="企业版如何管理账号和表单权限.html">
+            
+                <a href="企业版如何管理账号和表单权限.html">
+            
+                    
+                    企业版如何管理账号和表单权限
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.3" data-path="如何用企业版做品牌展示.html">
+            
+                <a href="如何用企业版做品牌展示.html">
+            
+                    
+                    如何用企业版做品牌展示
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.4" data-path="填表人如何在企业版查看和修改数据.html">
+            
+                <a href="填表人如何在企业版查看和修改数据.html">
+            
+                    
+                    填表人如何在企业版中查看和修改数据
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.5" data-path="如何用金数据企业版改造出差系统.html">
+            
+                <a href="如何用金数据企业版改造出差系统.html">
+            
+                    
+                    如何用企业版改造出差系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.6" data-path="如何用企业版改造运营商业务系统.html">
+            
+                <a href="如何用企业版改造运营商业务系统.html">
+            
+                    
+                    如何用企业版改造运营商业务系统
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="4.7" data-path="如何将金数据与企业-IT-系统对接.html">
+            
+                <a href="如何将金数据与企业-IT-系统对接.html">
+            
+                    
+                    如何与企业自有 IT 系统对接
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">职场指南</li>
+        
+        
+    
+        <li class="chapter " data-level="5.1" data-path="如何使用金数据做微信运营.html">
+            
+                <a href="如何使用金数据做微信运营.html">
+            
+                    
+                    如何使用金数据做微信运营
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.2" data-path="新榜如何使用金数据做数据管理.html">
+            
+                <a href="新榜如何使用金数据做数据管理.html">
+            
+                    
+                    新榜如何使用金数据做数据管理
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.3" data-path="如何高效地完成招聘.html">
+            
+                <a href="如何高效地完成招聘.html">
+            
+                    
+                    HR 行业使用案例：用金数据做招聘
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="5.4" data-path="如何用金数据搞定线下活动全部流程.html">
+            
+                <a href="如何用金数据搞定线下活动全部流程.html">
+            
+                    
+                    如何用金数据搞定线下活动全部流程
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+        
+        <li class="header">附录</li>
+        
+        
+    
+        <li class="chapter " data-level="6.1" data-path="金数据是什么.html">
+            
+                <a href="金数据是什么.html">
+            
+                    
+                    金数据是什么
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.2" data-path="字段大全.html">
+            
+                <a href="字段大全.html">
+            
+                    
+                    金数据所有字段介绍
+            
+                </a>
+            
+
+            
+        </li>
+    
+        <li class="chapter " data-level="6.3" data-path="如何创建表单.html">
+            
+                <a href="如何创建表单.html">
+            
+                    
+                    如何制作一张表单
+            
+                </a>
+            
+
+            
+        </li>
+    
+
+    
+
+    <li class="divider"></li>
+
+    <li>
+        <a href="https://www.gitbook.com" target="blank" class="gitbook-link">
+            本書使用 GitBook 釋出
+        </a>
+    </li>
+</ul>
+
+
+                </nav>
+            
+        
+    </div>
+
+    <div class="book-body">
+        
+            <div class="body-inner">
+                
+                    
+
+<div class="book-header" role="navigation">
+    
+
+    <!-- Title -->
+    <h1>
+        <i class="fa fa-circle-o-notch fa-spin"></i>
+        <a href="." >如何使用金数据做核销</a>
+    </h1>
+</div>
+
+
+
+
+                    <div class="page-wrapper" tabindex="-1" role="main">
+                        <div class="page-inner">
+                            
+<div id="book-search-results">
+    <div class="search-noresults">
+    
+                                <section class="normal markdown-section">
+                                
+                                <h1 id="&#x4F7F;&#x7528;&#x91D1;&#x6570;&#x636E;&#x505A;&#x6838;&#x9500;">&#x4F7F;&#x7528;&#x91D1;&#x6570;&#x636E;&#x505A;&#x6838;&#x9500;</h1>
+<p>&#x300C;&#x6838;&#x9500;&#x7801;&#x300D;&#x5E94;&#x7528;&#x4F1A;&#x5728;&#x8868;&#x5355;&#x586B;&#x5199;&#x6210;&#x529F;&#x540E;&#x4E3A;&#x586B;&#x5199;&#x8005;&#x81EA;&#x52A8;&#x751F;&#x6210;&#x4E00;&#x4E32;&#x968F;&#x673A;&#x6570;&#x5B57;&#x548C;&#x4E8C;&#x7EF4;&#x7801;&#xFF0C;&#x8FD0;&#x8425;&#x8005;&#x4F7F;&#x7528;&#x5FAE;&#x4FE1;&#x626B;&#x4E00;&#x626B;&#xFF0C;&#x6216;&#x7535;&#x8111;&#x8F93;&#x5165;&#x6570;&#x5B57;&#x5C31;&#x53EF;&#x4EE5;&#x6838;&#x5BF9;&#x586B;&#x5199;&#x4FE1;&#x606F;&#xFF0C;&#x786E;&#x8BA4;&#x5151;&#x6362;&#xFF0C;&#x5B8C;&#x6210;&#x6838;&#x9500;&#xFF0C;&#x5E94;&#x7528;&#x540E;&#x53F0;&#x4E5F;&#x4F1A;&#x8BB0;&#x5F55;&#x6240;&#x6709;&#x6838;&#x9500;&#x5386;&#x53F2;&#x3002;&#x9002;&#x7528;&#x4E8E;&#x62A5;&#x540D;&#x786E;&#x8BA4;&#x3001;&#x5546;&#x54C1;&#x9884;&#x5B9A;&#x3001;&#x670D;&#x52A1;&#x9884;&#x7EA6;&#x3001;&#x793C;&#x54C1;&#x9886;&#x53D6;&#x3001;&#x4F18;&#x60E0;&#x5151;&#x6362;&#x7B49;&#x573A;&#x666F;&#x3002;</p>
+<h2 id="&#x5982;&#x4F55;&#x5F00;&#x542F;">&#x5982;&#x4F55;&#x5F00;&#x542F;</h2>
+<p>&#x4F7F;&#x7528;&#x6838;&#x9500;&#x7801;&#x524D;&#xFF0C;&#x4F60;&#x9700;&#x8981;&#x5C06;&#x76F8;&#x5173;&#x8868;&#x5355;&#x521B;&#x5EFA;&#x597D;&#x3002;&#x4E4B;&#x540E;&#xFF0C;&#x5728;&#x5E94;&#x7528;&#x4E2D;&#x5FC3;&#x627E;&#x5230;&#x6838;&#x9500;&#x7801;&#xFF0C;&#x70B9;&#x51FB;&#x56FE;&#x6807;&#x5C31;&#x80FD;&#x5F00;&#x59CB;&#x4F60;&#x7684;&#x6838;&#x9500;&#x7801;&#x4E4B;&#x65C5;&#x3002;</p>
+<p>&#x5C06;&#x521B;&#x5EFA;&#x7684;&#x8868;&#x5355;&#x4E0E;&#x6838;&#x9500;&#x7801;&#x5E94;&#x7528;&#x8FDB;&#x884C;&#x5173;&#x8054;&#x8BBE;&#x7F6E;&#x3002;&#x8FD9;&#x6837;&#xFF0C;&#x6BCF;&#x4F4D;&#x586B;&#x8868;&#x4EBA;&#x63D0;&#x4EA4;&#x8868;&#x5355;&#x5C31;&#x80FD;&#x81EA;&#x52A8;&#x83B7;&#x5F97;&#x4E00;&#x5F20;&#x552F;&#x4E00;&#x7684;&#x6838;&#x9500;&#x7801;&#x4F5C;&#x4E3A;&#x7535;&#x5B50;&#x51ED;&#x8BC1;&#xFF0C;&#x5982;&#x56FE; 1 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x6548;&#x679C;.jpg" alt=""></p>
+<center>&#x56FE;1 &#x6838;&#x9500;&#x7801;</center>
+
+<p>&#x5982;&#x679C;&#x4F60;&#x60F3;&#x9650;&#x5236;&#x6BCF;&#x4E2A;&#x586B;&#x5199;&#x8005;&#x4EC5;&#x53EF;&#x83B7;&#x5F97;&#x4E00;&#x5F20;&#x6838;&#x9500;&#x7801;&#xFF0C;&#x53EF;&#x4EE5;&#x5728;&#x8868;&#x5355;&#x7684;&#x8BBE;&#x7F6E;&#x4E2D;&#x9009;&#x4E0A;&#x300C;&#x6BCF;&#x4E2A;&#x7535;&#x8111;/&#x624B;&#x673A;&#x9650;&#x586B;&#x4E00;&#x6B21;&#x300D;&#x3002;</p>
+<h2 id="&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x6838;&#x9500;&#x7801;">&#x77ED;&#x4FE1;&#x53D1;&#x9001;&#x6838;&#x9500;&#x7801;</h2>
+<p>&#x4E3A;&#x65B9;&#x4FBF;&#x586B;&#x8868;&#x4EBA;&#x4FDD;&#x5B58;&#x6838;&#x9500;&#x7801;&#x4FE1;&#x606F;&#xFF0C;&#x8FD8;&#x53EF;&#x4EE5;&#x5F00;&#x542F;&#x77ED;&#x4FE1;&#x63A8;&#x9001;&#x529F;&#x80FD;&#xFF0C;&#x5C06;&#x6838;&#x9500;&#x7801;&#x4FE1;&#x606F;&#x53D1;&#x9001;&#x7ED9;&#x4ED6;&#x4EEC;&#xFF0C;&#x5982;&#x56FE; 2 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x53D1;&#x9001;&#x77ED;&#x4FE1;.jpg" alt=""></p>
+<center>&#x56FE;2 &#x6838;&#x9500;&#x7801;&#x77ED;&#x4FE1;</center>
+
+<h2 id="&#x5F00;&#x542F;&#x6838;&#x9500;">&#x5F00;&#x542F;&#x6838;&#x9500;</h2>
+<p>&#x4F60;&#x53EF;&#x4EE5;&#x901A;&#x8FC7;&#x5FAE;&#x4FE1;&#x8FDB;&#x884C;&#x626B;&#x7801;&#x6838;&#x9500;&#xFF0C;&#x4E5F;&#x53EF;&#x5728;&#x6838;&#x9500;&#x7801;&#x5E94;&#x7528;&#x9875;&#x9762;&#x8F93;&#x5165;&#x6570;&#x5B57;&#x7801;&#x8FDB;&#x884C;&#x6838;&#x9500;&#x3002;</p>
+<p><strong>&#x5FAE;&#x4FE1;&#x626B;&#x7801;&#xFF1A;</strong>&#x5FAE;&#x4FE1;&#x6838;&#x9500;&#x9700;&#x8981;&#x5148;&#x5728;&#x5FAE;&#x4FE1;&#x4E2D;&#x767B;&#x9646;&#x597D;&#x4F60;&#x7684;&#x91D1;&#x6570;&#x636E;&#x8D26;&#x6237;&#xFF0C;&#x5E94;&#x7528;&#x540E;&#x53F0;&#x7684;&#x6838;&#x9500;&#x9875;&#x9762;&#x63D0;&#x4F9B;&#x4E86;&#x5728;&#x5FAE;&#x4FE1;&#x4E2D;&#x767B;&#x9646;&#x8D26;&#x6237;&#x7684;&#x5165;&#x53E3;&#xFF0C;&#x5982;&#x56FE; 3 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x5FAE;&#x4FE1;&#x626B;&#x7801;.jpg" alt=""></p>
+<center>&#x56FE;3 &#x626B;&#x7801;&#x767B;&#x5F55;&#x6838;&#x9500;</center>
+
+<p>&#x5B8C;&#x6210;&#x767B;&#x9646;&#xFF0C;&#x4F7F;&#x7528;&#x5FAE;&#x4FE1;&#x4E2D;&#x7684;&#x626B;&#x4E00;&#x626B;&#x626B;&#x63CF;&#x7528;&#x6237;&#x624B;&#x4E2D;&#x7684;&#x4E8C;&#x7EF4;&#x7801;&#xFF0C;&#x5373;&#x53EF;&#x770B;&#x5230;&#x7528;&#x6237;&#x7684;&#x586B;&#x5199;&#x4FE1;&#x606F;&#xFF0C;&#x786E;&#x8BA4;&#x6838;&#x9500;&#x3002;</p>
+<p>&#x5BF9;&#x4E8E;&#x542B;&#x6709;&#x5546;&#x54C1;&#x7684;&#x8868;&#x5355;&#xFF0C;&#x6211;&#x4EEC;&#x4E5F;&#x505A;&#x4E86;&#x4E00;&#x9879;&#x7279;&#x522B;&#x7684;&#x4F18;&#x5316;&#xFF0C;&#x53EA;&#x6709;&#x652F;&#x4ED8;&#x6210;&#x529F;&#x624D;&#x4F1A;&#x53D1;&#x653E;&#x6838;&#x9500;&#x7801;&#xFF0C;&#x5728;&#x6838;&#x9500;&#x65F6;&#xFF0C;&#x4E5F;&#x80FD;&#x770B;&#x5230;&#x7528;&#x6237;&#x7684;&#x652F;&#x4ED8;&#x72B6;&#x6001;&#x3002;</p>
+<p>&#x5E94;&#x7528;&#x540E;&#x53F0;&#x8F93;&#x5165;&#x6570;&#x5B57;&#x7801;&#xFF1A;&#x5728;&#x7F51;&#x9875;&#x7AEF;&#x6838;&#x9500;&#x7801;&#x5E94;&#x7528;&#x7684;&#x540E;&#x53F0;&#x53EF;&#x4EE5;&#x770B;&#x5230;&#x6240;&#x6709;&#x7684;&#x6838;&#x9500;&#x7801;&#xFF0C;&#x5728;&#x641C;&#x7D22;&#x6846;&#x4E2D;&#x8F93;&#x5165;&#x6838;&#x9500;&#x7801;&#x5373;&#x53EF;&#x8FDB;&#x884C;&#x4FE1;&#x606F;&#x786E;&#x8BA4;&#x548C;&#x6838;&#x9500;&#xFF0C;&#x5982;&#x56FE; 4 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x6838;&#x9500;&#x7ED3;&#x679C;.jpg" alt=""></p>
+<center>&#x56FE;4 &#x6838;&#x9500;&#x7ED3;&#x679C;&#x754C;&#x9762;</center>
+
+<p>&#x4E0D;&#x8BBA;&#x662F;&#x5728;&#x5FAE;&#x4FE1;&#x8FD8;&#x662F;&#x5E94;&#x7528;&#x540E;&#x53F0;&#x6838;&#x9500;&#x7684;&#x7801;&#xFF0C;&#x90FD;&#x4F1A;&#x5B9E;&#x65F6;&#x663E;&#x793A;&#x5728;&#x6838;&#x9500;&#x7801;&#x5217;&#x8868;&#x4E2D;&#x3002;</p>
+<h2 id="&#x591A;&#x4EBA;&#x6838;&#x9500;">&#x591A;&#x4EBA;&#x6838;&#x9500;</h2>
+<p>&#x300C;&#x534F;&#x4F5C;&#x300D;&#x9875;&#x9762;&#x53EF;&#x4EE5;&#x8BBE;&#x7F6E;&#x591A;&#x540D;&#x6838;&#x9500;&#x5458;&#x5E76;&#x751F;&#x6210;&#x5BF9;&#x5E94;&#x7684;&#x6838;&#x9500;&#x7F51;&#x5740;&#xFF0C;&#x53D1;&#x9001;&#x7F51;&#x5740;&#x7ED9;&#x5BF9;&#x5E94;&#x7684;&#x6838;&#x9500;&#x5458;&#x5373;&#x53EF;&#x5F00;&#x59CB;&#x6838;&#x9500;&#xFF0C;&#x6240;&#x6709;&#x7684;&#x6838;&#x9500;&#x6570;&#x636E;&#x90FD;&#x5B9E;&#x65F6;&#x540C;&#x6B65;&#x540E;&#x53F0;&#xFF0C;&#x5982;&#x56FE; 5 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x591A;&#x4EBA;&#x6838;&#x9500;.jpg" alt=""></p>
+<center>&#x56FE;5 &#x591A;&#x4EBA;&#x6838;&#x9500;</center>
+
+<h2 id="&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x6848;">&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x6848;</h2>
+<p>&#x4E0D;&#x540C;&#x884C;&#x4E1A;&#x7684;&#x7528;&#x6237;&#xFF0C;&#x6838;&#x9500;&#x7801;&#x7684;&#x4F7F;&#x7528;&#x573A;&#x666F;&#x4E0D;&#x540C;&#xFF0C;&#x6240;&#x4EE5;&#x5728;&#x8BBE;&#x7F6E;&#x6838;&#x9500;&#x7801;&#x7684;&#x8FC7;&#x7A0B;&#x4E2D;&#xFF0C;&#x652F;&#x6301;&#x81EA;&#x5B9A;&#x4E49;&#x6838;&#x9500;&#x7801;&#x7684;&#x6587;&#x6848;&#xFF0C;&#x6BD4;&#x5982;&#x4F60;&#x53EF;&#x4EE5;&#x8D77;&#x540D;&#x53EB;&#x505A;&#xFF1A;&#x300C;&#x62A5;&#x540D;&#x786E;&#x8BA4;&#x7801;&#x300D;&#x3001;&#x300C;&#x5151;&#x6362;&#x7801;&#x300D;&#x3001;&#x300C;&#x9884;&#x7EA6;&#x7801;&#x300D;&#x7B49;&#x7B49;&#xFF0C;&#x4EE5;&#x4FBF;&#x66F4;&#x8D34;&#x5408;&#x4F60;&#x7684;&#x5B9E;&#x9645;&#x4E1A;&#x52A1;&#xFF0C;&#x5982;&#x56FE; 6 &#x6240;&#x793A;&#x3002;</p>
+<p><img src="assets/&#x6838;&#x9500;&#x7801;-&#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x6848;.jpg" alt=""></p>
+<center>&#x56FE;6 &#x81EA;&#x5B9A;&#x4E49;&#x6587;&#x6848;</center>
+
+<p>&#x6B64;&#x5916;&#xFF0C;&#x4F60;&#x8FD8;&#x53EF;&#x4EE5;&#x81EA;&#x5B9A;&#x4E49;&#x6838;&#x9500;&#x7801;&#x7684;&#x4F7F;&#x7528;&#x8BF4;&#x660E;&#xFF0C;&#x4FBF;&#x4E8E;&#x4F60;&#x7684;&#x7528;&#x6237;&#x8FDB;&#x884C;&#x6838;&#x9500;&#x3002;</p>
+
+                                
+                                </section>
+                            
+    </div>
+    <div class="search-results">
+        <div class="has-results">
+            
+            <h1 class="search-results-title"><span class='search-results-count'></span> results matching "<span class='search-query'></span>"</h1>
+            <ul class="search-results-list"></ul>
+            
+        </div>
+        <div class="no-results">
+            
+            <h1 class="search-results-title">No results matching "<span class='search-query'></span>"</h1>
+            
+        </div>
+    </div>
+</div>
+
+                        </div>
+                    </div>
+                
+            </div>
+
+            
+                
+                <a href="如何进行在线考试.html" class="navigation navigation-prev " aria-label="Previous page: 如何进行在线考试">
+                    <i class="fa fa-angle-left"></i>
+                </a>
+                
+                
+                <a href="如何将表单数据打印到word文档.html" class="navigation navigation-next " aria-label="Next page: 如何将表单数据打印到 Word 文档">
+                    <i class="fa fa-angle-right"></i>
+                </a>
+                
+            
+        
+    </div>
+
+    <script>
+        var gitbook = gitbook || [];
+        gitbook.push(function() {
+            gitbook.page.hasChanged({"page":{"title":"如何使用金数据做核销","level":"3.5","depth":1,"next":{"title":"如何将表单数据打印到 Word 文档","level":"3.6","depth":1,"path":"如何将表单数据打印到word文档.md","ref":"如何将表单数据打印到word文档.md","articles":[]},"previous":{"title":"如何进行在线考试","level":"3.4","depth":1,"path":"如何进行在线考试.md","ref":"如何进行在线考试.md","articles":[]},"dir":"ltr"},"config":{"plugins":["livereload"],"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"pluginsConfig":{"livereload":{},"highlight":{},"search":{},"lunr":{"maxIndexSize":1000000,"ignoreSpecialCharacters":false},"sharing":{"facebook":true,"twitter":true,"google":false,"weibo":false,"instapaper":false,"vk":false,"all":["facebook","google","twitter","weibo","instapaper"]},"fontsettings":{"theme":"white","family":"sans","size":2},"theme-default":{"styles":{"website":"styles/website.css","pdf":"styles/pdf.css","epub":"styles/epub.css","mobi":"styles/mobi.css","ebook":"styles/ebook.css","print":"styles/print.css"},"showLevel":false}},"theme":"default","author":"金数据","pdf":{"pageNumbers":false,"fontSize":18,"fontFamily":"STHeiti","paperSize":"a4","chapterMark":"pagebreak","pageBreaksBefore":"/","margin":{"right":62,"left":62,"top":56,"bottom":56}},"structure":{"langs":"LANGS.md","readme":"README.md","glossary":"GLOSSARY.md","summary":"SUMMARY.md"},"variables":{},"title":"2小时精通金数据","language":"zh-cn","gitbook":"*"},"file":{"path":"如何使用金数据做核销.md","mtime":"2017-12-05T08:04:51.000Z","type":"markdown"},"gitbook":{"version":"3.2.2","time":"2017-12-05T05:41:05.916Z"},"basePath":".","book":{"language":""}});
+        });
+    </script>
+</div>
+
+        
+    <script src="gitbook/gitbook.js"></script>
+    <script src="gitbook/theme.js"></script>
+    
+        
+        <script src="gitbook/gitbook-plugin-livereload/plugin.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search-engine.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-search/search.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/lunr.min.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-lunr/search-lunr.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-sharing/buttons.js"></script>
+        
+    
+        
+        <script src="gitbook/gitbook-plugin-fontsettings/fontsettings.js"></script>
+        
+    
+
+    </body>
+</html>
+
